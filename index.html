@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>RoofSpike</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css" />
+    <script src="https://js.arcgis.com/4.28/"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
+    <!-- Ajout de la feuille de style CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Ajout du fichier JavaScript -->
+    <script src="./javascript/main.js"></script>
+ 
+
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="#">
+                <img src="./home.png" style="width: 2.5rem; height: auto;margin-left: 3rem;">
+            </a>
+            <a href="#">
+                <img src="./RoofSpike.jpg" style="width: 17rem; height: auto;">
+            </a>
+            <a href="#">
+                <img src="./user.png" style="width: 3.5rem; height: auto; margin-right: 3rem;">
+            </a>
+        </div>
+    </header>
+    <div id="viewDiv"></div>
+    <div class="sidebaerWrapper">
+        <button id="sidebarToggle" class="toggle-btn" onclick="toggleSidebar()">
+            <i class="fas fa-angle-right"></i>
+            <i class="fas fa-angle-left"></i>
+        </button>
+        <div id="sidebar">
+            <div class="sidebarContent">
+                <!-- Your sidebar content here -->
+            </div>
+            <button id="toggleSidebarButton" class="action-button" type="button" style="display: none;">
+                <span id="toggleIcon" class="esri-icon-right-arrow"></span>
+            </button>
+        </div>
+    </div>
+    <div id="topbar">
+        <button class="action-button esri-icon-measure-line" id="distanceButton" type="button" title="Measure distance between two points"></button>
+    </div>
+    <div id="topbar1">
+        <button class="action-button esri-icon-measure-area" id="areaButton" type="button" title="Measure area"></button> 
+    </div>
+</body>
+
+
+</html>
